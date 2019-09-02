@@ -1,0 +1,9 @@
+SELECT * FROM persons JOIN contact ON persons.id=contact.persons_id
+SELECT persons.name,contact.contact_no FROM persons JOIN contact ON persons.id = contact.persons_id
+SELECT persons.name,contact.contact_no FROM persons JOIN contact ON persons.id = contact.persons_id WHERE persons.id=1
+SELECT  persons.name,brother.name FROM persons JOIN brother ON persons.id=brother.id
+SELECT  persons.name,brother.name FROM persons JOIN brother ON persons.id=brother.id WHERE
+brother.persons_id =1
+INSERT INTO persons(`id`,`name`,`address`,`email`) VALUES('','shilan','brtt','proe@gmail.com'),('','nabin','ktt','proen@gmail.com');
+UPDATE persons SET address='sinamangal' WHERE id='3'
+DELETE FROM persons WHERE id='2'
